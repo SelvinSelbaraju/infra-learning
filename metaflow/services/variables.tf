@@ -45,6 +45,10 @@ variable "metadata_service_image" {
   type = string
 }
 
+variable "ui_static_image" {
+  type = string
+}
+
 variable "metaflow_datastore_root" {
   type = string
 }

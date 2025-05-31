@@ -79,6 +79,7 @@ module "services" {
   full_metaflow_workload_identity_gsa_name = module.infra.metaflow_workload_identity_gsa_id
   db_connection_name                       = data.google_sql_database_instance.default.connection_name
   metadata_service_image                   = local.metadata_service_image
+  ui_static_image = local.ui_static_image
   metaflow_db_port                         = local.metaflow_db_port
   metaflow_db_name                         = local.metaflow_db_name
   metaflow_db_user                         = local.metaflow_db_user

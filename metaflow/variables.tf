@@ -7,6 +7,7 @@ locals {
   metaflow_db_user_password           = "metaflow"
   metaflow_db_host                    = "localhost"
   metadata_service_image              = "public.ecr.aws/outerbounds/metaflow_metadata_service:2.3.3"
+  ui_static_image                     = "public.ecr.aws/outerbounds/metaflow_ui:v1.1.4"
 }
 
 variable "region" {
