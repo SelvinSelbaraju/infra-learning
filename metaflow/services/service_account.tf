@@ -4,7 +4,7 @@
 # Another example is that pods need to access CloudSQL, and we can federate the access
 resource "kubernetes_service_account" "metaflow_service_account" {
   metadata {
-    name = "ksa-metaflow"
+    name = var.metaflow_workload_identity_ksa_name
     namespace = "default"
     # Annotations are different from labels
     # Labels are used to identify K8s objects

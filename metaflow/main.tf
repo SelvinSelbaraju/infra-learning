@@ -74,6 +74,7 @@ module "services" {
   project                             = var.project
   region                              = var.region
   metaflow_workload_identity_gsa_name = local.metaflow_workload_identity_gsa_name
+  metaflow_workload_identity_ksa_name = local.metaflow_workload_identity_ksa_name
   # This needs to be the full IAM name
   # With the projects/... prefix etc
   full_metaflow_workload_identity_gsa_name = module.infra.metaflow_workload_identity_gsa_id

@@ -1,6 +1,7 @@
 locals {
   k8s_cluster_name                    = "metaflow-k8s-${terraform.workspace}"
   metaflow_workload_identity_gsa_name = "gsa-metaflow-${terraform.workspace}"
+  metaflow_workload_identity_ksa_name = "ksa-metaflow"
   metaflow_db_port                    = 5432
   metaflow_db_name                    = "metaflow"
   metaflow_db_user                    = "metaflow"

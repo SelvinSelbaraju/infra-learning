@@ -1,3 +1,5 @@
 */*.tfvars
 */.terraform
 */*key*.json
+# Don't want to commit the metaflow config
+./config.json

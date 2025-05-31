@@ -17,6 +17,10 @@ variable "metaflow_workload_identity_gsa_name" {
   type = string
 }
 
+variable "metaflow_workload_identity_ksa_name" {
+  type = string
+}
+
 variable "db_connection_name" {
   type = string
 }
