@@ -42,7 +42,7 @@ resource "kubernetes_deployment" "metadata_service" {
         # The metadata service then sends query requests to the proxy server which routes to the Cloud SQL instance
         # See here https://github.com/Netflix/metaflow-service/blob/9e47d2d85e127d2673d457dde7ae535a3341de0f/run_goose.py#L54
         container {
-          name  = "metaflow-ui-backend-service-cloud-sql-proxy"
+          name  = "metaflow-metadata-service-cloud-sql-proxy"
           image = "gcr.io/cloudsql-docker/gce-proxy:1.28.0"
           command = ["/cloud_sql_proxy", "-ip_address_types=PRIVATE", "-log_debug_stdout",
           "-instances=${var.db_connection_name}=tcp:${var.metaflow_db_port}"]

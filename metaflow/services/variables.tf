@@ -44,3 +44,7 @@ variable "metaflow_db_host" {
 variable "metadata_service_image" {
   type = string
 }
+
+variable "metaflow_datastore_root" {
+  type = string
+}

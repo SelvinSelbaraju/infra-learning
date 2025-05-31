@@ -84,4 +84,5 @@ module "services" {
   metaflow_db_user                         = local.metaflow_db_user
   metaflow_db_user_password                = local.metaflow_db_user_password
   metaflow_db_host                         = local.metaflow_db_host
+  metaflow_datastore_root                  = "gs://${var.storage_bucket_name}/tf-full-stack-sysroot"
 }
